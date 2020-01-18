@@ -1,0 +1,82 @@
+@colorbulue:#0ba1e4;
+/*标题下方的短下划线*/
+.line{
+    border-top: 1px solid @colorbulue;
+    width: 30px;
+}
+.line-big{
+    margin: 0px 0 10px 0;
+    border-width: 2px;
+    width:80px;
+}
+
+@media (max-width:767px){
+	p,li,h3{
+		font-size:12px !important;
+	}
+	h2{
+		font-size: 18px !important;
+		margin-top: 20px !important;
+	}
+	
+}
+.three-cont{
+	padding: 50px 0;
+	h2{
+		margin-top: 50px;
+		color: @colorbulue;
+	}
+	p{
+		font-size: 20px;
+		font-weight: 300;
+		color: #919191;
+	}
+}
+.three-right{
+	.col-xs-8{
+		h2{
+			text-align: right;
+		}
+		p{
+			float: right;
+			text-align: right;
+		}
+	}
+}
+
+
+.focusone{
+	padding: 25px 0;
+	background-color: @colorbulue;
+	h3{
+		font-size: 18px;
+		color: #fff;
+	}
+}
+.contbg{
+	padding: 50px 0;
+	background: url(../images/urgent_chat.jpg) no-repeat;
+	background-position: center top; 
+	.cotbg{
+		
+			h2{
+				font-size: 36px;
+			}
+				
+			p{
+				font-size: 18px ;
+				font-weight: 300;
+			}
+			ol{
+				li{
+					font-size: 18px ;
+					line-height: 2em;
+					font-weight: 300;
+					list-style: decimal;
+				}
+			}
+			button{
+				width: 120px;
+			}
+		}
+}

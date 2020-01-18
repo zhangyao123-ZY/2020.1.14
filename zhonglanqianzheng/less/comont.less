@@ -1,0 +1,416 @@
+@colorbulue:#0ba1e4;
+
+//导航条
+ul,li{
+	list-style: none;
+}
+
+/*手机超小屏幕下的单独样式 xs < 768px */
+@media (max-width: 767px){
+    /*全部-导航*/
+    body{
+        padding-top: 0;/*移动端若固定顶部导航的话高度为52px*/
+        padding-bottom: 55px;
+    }
+	
+    #header .navbar{/*移动端导航不固定顶部*/
+        position: relative !important;
+    }
+    #header .navbar{
+        padding-bottom: 0;
+    }
+    /*全部-导航*/
+}
+
+/*大于手机屏幕时的样式 sm >= 768px */
+@media (min-width: 768px){
+    body{
+        padding-top: 82px;/*顶部固定导航条的空间*/
+    }
+	
+    /*全部-导航*/
+    #header .navbar{
+        //border-radius: 0;
+        padding: 15px 0;
+		
+    }
+	
+    #header .navbar-nav>li>a{
+        padding: 15px 0 !important;
+    }
+    /*全部-导航*/
+}
+
+
+/*大于992px以上固定宽度为970px md >= 992px */
+@media (min-width: 992px){
+    /*全部-最大宽度*/
+    .container {
+        width: 970px;
+    }
+    /*全部-最大宽度*/
+}
+
+.navbar-brand{
+	padding: 0 0 0 15px;
+}
+#header .navbar-default .navbar-nav>li .line-top{
+    border-top: 1px solid @colorbulue;
+    width: 18px;
+    margin: auto;
+}
+#header .navbar-default{
+    border:0;
+    margin-bottom: 0;
+    border-bottom: 2px solid @colorbulue;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-color: rgba(255,255,255,0.9);
+}
+#header .navbar-default .navbar-nav>li>a{
+    font-size: 16px;
+    padding: 16px 25px 5px !important;
+}
+// #header .navbar-default .navbar-nav>li>a:hover{
+//     color: @colorbulue;
+// }
+#header .navbar-default .navbar-nav .active >a{
+	background-color: #fff;
+	color: @colorbulue;
+}
+
+.index-row {
+	padding: 50px 0px 25px 0;
+	.container .main-title{
+            text-align: center;
+            margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+/*标题下方的短下划线*/
+.line{
+    border-top: 1px solid @colorbulue;
+    width: 30px;
+}
+.line-big{
+    margin: 30px auto 26px;
+    border-width: 2px;
+    width:80px;
+}
+
+//导航条
+
+//全部页脚
+
+/*全部-咨询banner*/
+.contact-banner{
+    position: relative;
+    overflow:hidden;
+    padding:0;
+    background:linear-gradient(to bottom,#0076d1,#5db8ff);
+   
+}
+.contact-banner .waves{
+    position: absolute;
+    height: 100%;
+}
+.contact-banner-box{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contact-banner-box h2{
+    display: block;
+    max-width: 10em;
+    margin: 0px auto;
+    line-height: 2em;
+    border-bottom: 2px solid #fff;
+    color: #f5f5f5;
+}
+
+.contact-banner-box h4{
+    color: #f1f1f1;
+}
+
+.contact-banner-box .btn{
+    font-size: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+	border: 1px solid #fff;
+	color: #fff;
+	&:hover{
+		background-color: #fff;
+		color: @colorbulue;
+	}
+}
+/*全部-咨询banner*/
+
+//页脚内容
+.footer-list{
+	border-left: 2px solid #fff;
+	height: 160px;
+	margin: 40px 0;
+	overflow: hidden;
+	padding-left: 15px;
+	h3{
+		margin-top: 8px;
+	}
+	ul{
+		margin-top: 25px;
+		padding-left: 0;
+		li{
+			list-style: none;
+			margin: 15px 0;
+			a{
+				color: #fff;
+			}
+		}
+	}
+	.footer-list-img{
+		max-width: 130px;
+	}
+	.footer-list-p{
+		line-height: 30px;
+	}
+}
+.footer-coal{
+	border-right: 2px solid #fff;
+	h2{
+		line-height: 52px;
+		margin: 0;
+		img{
+			display: inline;
+			height: 40px;
+			width: 40px;
+			margin-top: -6px;
+			margin-right: 10px;
+		}
+	}
+}
+//页脚内容
+
+//版权信息
+.footer-end{
+	padding: 25px 0 0 0;
+	text-align: center;
+	color: #fff;
+	
+	.footer-contact{
+		margin: 25px 0;
+		a{
+			display: inline-block;
+			text-decoration: none;
+			height: 20px;
+			line-height: 20px;
+			color: #fff;
+			img{
+				
+			}
+			p{
+				display: inline-block;
+			}
+		}
+	}
+	
+}
+//版权信息
+
+// 留言框
+#message{
+	width: 240px;
+	height: 430px;
+	background-color: #EDEDED;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border-top-right-radius: 6px;
+	h4{
+		background-color: @colorbulue;
+		border-top-right-radius: 6px;
+		margin: 0;
+		padding: 0 15px;
+		height: 35px;
+		color: #fff;
+		font-size: 14px;
+		line-height: 35px;
+		
+		img{
+			float: right;
+		}
+	}
+	.message-title{
+		height: 60px;
+		padding: 10px 15px 40px 15px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #d5d5d5;
+		p{
+			margin: 0;
+			color:#666;
+		}
+		.message-title-p{
+			color: #333;
+			font-size: 16px;
+		}
+	}
+	.message-body{
+		padding: 5px;
+		text-align: center;
+		
+		textarea{
+			width: 222px;
+			height: 81px;
+			resize: none;
+		}
+		.mui-input-row{
+			width: 222px;
+			height: 32px;
+			background-color: #fff;
+			margin:10px 3px;
+			border: 1px solid #ccc;
+			text-align: left;
+			img{
+				margin-right: 6px;
+				margin-left: 12px;
+			}
+			input{
+				height: 30px;
+				width: 140px;
+				border: 0;
+			}
+			
+		}
+		input[type="button"]{
+			width: 90px;
+			height: 35px;
+			margin-left: -132px;
+			background-color: @colorbulue;
+			border: 0;
+			color: #fff;
+		}
+	}
+}
+//留言框
+
+// 悬浮框
+#popup{
+	width: 48px;
+	height: 248px;
+	position: fixed;
+	right: 8%;
+	top: 30%;
+	z-index: 999;
+	li{
+		list-style: none;
+		position: relative;
+		width: 0;
+		
+		a{
+			display: inline-block;
+			width: 48px;
+			height: 48px;
+			border: 1px solid @colorbulue;
+			
+			background: url(../images/clan-slider.png) no-repeat;
+		    background-color: #fff;
+		}
+		.popup-one{
+			background-position: 0px -92px;
+		&:hover{
+			background-color: @colorbulue;
+			background-position: -46px -92px;
+		}
+		}
+		.popup-two{
+			background-position: 0px -137px;
+			&:hover{
+				background-color: @colorbulue;
+				background-position: -46px -137px;
+				}
+		}
+		.popup-three{
+				background-position: 0px -183px;
+				&:hover{
+					background-color: @colorbulue;
+					background-position: -46px -183px;
+					}
+		}
+		.popup-four{
+			background-position: 0px -230px;
+			&:hover{
+				background-color: @colorbulue;
+				background-position: -46px -230px;
+				}
+		}
+		.popup-five{
+			background-position: 0px 0px;
+			display: none;
+			&:hover{
+				background-color: @colorbulue;
+				background-position: -46px 0px;
+				}
+		}
+		.popup-title{
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 48px;
+			width: 100px;
+			line-height: 48px;
+			text-align: center;
+			font-size: 18px;
+			background-color: @colorbulue;
+			display: none;
+		}
+		.popup-tel{
+			width: 130px;
+		}
+		.popup-wei{
+			width: 196px;
+			height: 196px;
+			border: 1px solid @colorbulue;
+			top: -148px;
+			right: 3px;
+		}
+	}
+}
+// 悬浮框
+
+// 手机端底部
+#terminal{
+text-align: center;
+height: 70px;
+width: 100%;
+z-index: 999;
+padding: 10px 10px 10px 0;
+border-top: 2px solid @colorbulue;
+
+position: fixed;
+bottom: 0;
+background-color: #fff;
+.col-xs-3{
+	padding-left: 0;
+}
+.terminal-jiantou{
+	width: 48px;
+	height: 48px;
+	z-index: 999;
+	background-color:red;
+	border-radius: 50%;
+	background: url(../images/clan-slider.png) no-repeat;
+	background-color:#fff;
+	background-position: -92px 0;
+	position: fixed;
+	bottom: 70px;
+	right: 0;
+	display: none;
+}
+}
+// 手机端底部
+	
+//全部页脚

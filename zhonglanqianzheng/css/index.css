@@ -1,0 +1,71 @@
+/*手机超小屏幕下的单独样式 xs < 768px */
+@media (max-width: 767px){
+    /*全部-导航*/
+    body{
+        padding-top: 0;/*移动端若固定顶部导航的话高度为52px*/
+        padding-bottom: 55px;
+    }
+    #header .navbar{/*移动端导航不固定顶部*/
+        position: relative !important;
+    }
+    #header .navbar{
+        padding-bottom: 0;
+    }
+    /*全部-导航*/
+}
+
+/*大于手机屏幕时的样式 sm >= 768px */
+@media (min-width: 768px){
+    body{
+        padding-top: 82px;/*顶部固定导航条的空间*/
+    }
+    /*全部-导航*/
+    #header .navbar{
+        border-radius: 0;
+        padding: 15px 0;
+    }
+    #header .navbar-nav>li>a{
+        padding: 15px 0;
+    }
+    /*全部-导航*/
+}
+
+
+/*大于992px以上固定宽度为970px md >= 992px */
+@media (min-width: 992px){
+    /*全部-最大宽度*/
+    .container {
+        width: 970px;
+    }
+    /*全部-最大宽度*/
+}
+
+/*全部-导航条样式复写*/
+#header .navbar-default{
+    border:0;
+    margin-bottom: 0;
+    border-bottom: 2px solid #0ba1e4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-color: rgba(255,255,255,0.9);
+}
+#header .navbar-default .navbar-nav>li>a{
+    font-size: 16px;
+    padding: 16px 25px 5px !important;
+}
+#header .navbar-default .navbar-nav>li>a:hover{
+    color: #0ba1e4;
+}
+#header .navbar-default .navbar-nav>.active>a, #header .navbar-default .navbar-nav>.active>a:hover, #header .navbar-default .navbar-nav>.active>a:focus{
+    color:#0ba1e4;
+    background-color: rgba(255,255,255,0);
+}
+#header .navbar-default .navbar-toggle .icon-bar{
+    background-color: none;
+}
+#header .navbar-default .navbar-nav>li .line-top{
+    border-top: 1px solid #0ba1e4;
+    width: 18px;
+    margin: auto;
+}
+/*全部-导航条样式复写*/

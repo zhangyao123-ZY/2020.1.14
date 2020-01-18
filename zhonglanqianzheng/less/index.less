@@ -1,0 +1,293 @@
+@colorbulue:#0ba1e4;
+
+//我们的成绩
+.number{
+	font-size: 70px;
+	color: @colorbulue;
+}
+//我们的成绩
+//我们的优势
+
+.advantage{
+	background-color: #e1e1e1;
+	.advantage-our{
+		padding: 10px;
+		border: 1px solid #919191;
+		background-color: #fff;
+		transition: all 1s;
+		.glyphicon{
+			color: @colorbulue;
+			font-size: 80px;
+			margin: 20px 0;
+			transition: all 1s;
+			
+		}
+		
+		&:hover{
+			border: 1px solid @colorbulue;
+			background-color: @colorbulue;
+			color: #fff;
+			transition: all 1s;
+			.glyphicon{
+				color: #fff;
+				transition: all 1s;
+				
+			}
+			
+		}
+	}
+	
+}
+//我们的优势
+
+
+//我们的服务
+
+
+/*手机超小屏幕下的单独样式 xs < 768px */
+@media (max-width: 767px) {
+    .card-area{
+		.card-item {
+		    width: 100% !important;
+		}
+		.card-active {
+		        z-index: 10 !important;
+		    }
+	} 
+}
+.card-area {
+    padding: 0;
+    margin: 0;
+	.card-item{
+	    float:left;
+	    position:relative;
+	    list-style:none;
+	    width: 25%;
+	    background-color: #fafafa;
+	    border:1px solid #c1c1c1;
+	    transition: all 0.3s ease-in-out;
+		z-index: 888;
+	    .card-title{
+	        padding-top: 20px;
+	        padding-bottom: 20px;
+	        border-bottom: 1px solid #c1c1c1;
+			h4{
+			    font-weight: bold;
+			    color: @colorbulue;
+			}
+			
+	    }
+		.card-content{
+		    padding-top: 20px;
+		    padding-bottom: 30px;
+			p{ 
+				line-height: 40px;
+			
+			}
+		}
+		
+	}
+	.card-active {
+	    background-color: @colorbulue;
+	    border:1px solid @colorbulue;
+        transform: scale(1.1);
+		transition: all 0.3s ease-in-out;
+		box-shadow: 0 0 20px 0 rgba(45,183,245,.5);
+	    color: #fff;
+	    z-index: 900;
+		.card-title{
+		    border-color: #ffffff;
+			border-bottom: 1px solid #fff;
+			h4{
+			    color: #fff;
+			}
+		}
+	}
+}
+.serve .container .serve-btn .btn-lg{
+	margin-top: 80px;
+	border: 1px solid @colorbulue;
+	color: @colorbulue;
+	&:hover{
+		background-color: @colorbulue;
+		color: #fff;
+	}
+}
+//我们的服务
+
+
+//客户的鼓励
+
+.main-conta{
+	margin-top: 40px;
+}
+
+.encourage{
+	border: 1px solid #34A263;
+	padding: 15px;	
+	position: relative;
+	border-radius: 6px;
+	.encourage-img{	
+     display: inline-block;
+	 transform: scale(0.5);
+	 margin-top: -70px;
+	}
+	p{
+		margin-top: -15px;
+	}
+	.encourage-sanjiao1,.encourage-sanjiao2{
+		width: 0;
+		height: 0;
+		border: 11px solid transparent;
+		position: absolute;
+		left: 50%;
+		margin-left: -11px;
+		bottom: -11px;
+		border-top-color: #34A263;
+		border-bottom-width: 0;
+		z-index: 4;
+	}
+	.encourage-sanjiao2{
+		border-top-color: #E1E1E1;
+		z-index: 55;
+		bottom: -10px;
+	}
+	.encourage-addres{
+		
+		font-size: 12px;
+		padding-bottom: 35px;
+		.encourage-addres-span{
+			display: inline-block;
+			background-color: #aaa;
+			color: #fff;
+			max-width: 50%;
+			overflow: hidden;
+			white-space: nowrap;
+			padding: 0.5% 3.5%;
+			float: left;
+		}
+		.encourage-dizhi{
+			display: inline-block;
+			float: right;
+			
+				img{
+					width: 10px;
+					height: 10px;
+				}
+			
+			span{
+				display: inline-block;
+				color: #aaa;
+			}
+		}
+	}
+	
+	
+}
+.encourage-yuan{
+	display: inline-block;
+		border: 1px solid #34A263;
+		height: 70px;
+		width: 70px;
+		line-height: 70px;
+		color: #34A263;
+		text-align: center;
+		margin-top: 30px;
+		border-radius: 50%;
+	
+	}
+//客户的鼓励
+
+//美国签证最新资讯
+/*手机超小屏幕下的单独样式 xs < 768px */
+@media (max-width: 767px) {
+    .media-list{
+		.media{
+			display: inline-block;
+		    width: 95% ;
+			text-align: center;
+		}
+	} 
+}	
+////美国签证最新资讯 公共样式
+.media{
+    padding: 10px;
+	//padding-left: 0;
+	.media-left{
+		img{
+			width: 130px;
+			height: 100px;
+		}
+	}
+	.consult{
+		font-size: 12px;
+		margin-left: 5%;
+		color: #919191;
+		width: 300px;
+		
+		h4{
+			width: 300px;
+			height: 19px;
+			margin-top: 5px;
+			font-weight: 400;
+			text-align: left;
+			color: @colorbulue;
+		   white-space: nowrap;
+		   overflow: hidden;
+		   text-overflow: ellipsis;
+		   word-wrap: break-word;//长单词换行
+		   font-weight: 400;
+		   transition: all 0.5s;
+		&:hover{
+			font-weight: bold;
+			 transition: all 0.5s;
+		    }
+		}
+		>span{
+			display: inline-block;
+			float: left;
+		}
+		p{
+			line-height: 16px;
+			height: 34px;
+			width: 300px;
+			margin: 0;
+			overflow: hidden;
+			text-align: left;
+			display: -webkit-box;
+			line-clamp: 2;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+		}
+		a{
+			float: right;
+			color: #919191;
+			cursor: pointer;
+			text-decoration: none;
+			&:hover{
+				color: #f93;
+			}
+		}
+	}
+}
+//美国签证最新资讯
+
+//我们的客户
+#client{
+	padding-top: -50px ;
+	.client-log{
+		border: 1px solid #333;
+		filter: grayscale(100%);
+		margin: 20px 0;
+		&:hover{
+			filter: none;
+			border: 1px solid @colorbulue;
+			box-shadow: 0 0 10px @colorbulue;
+		}
+	}
+}
+//我们的客户
+
+
+
+
