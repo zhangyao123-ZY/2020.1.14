@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2763902",
+      "name": "删除筛选项",
+      "font_class": "delete2",
+      "unicode": "e7a5",
+      "unicode_decimal": 59301
+    },
+    {
+      "icon_id": "3599140",
+      "name": "减",
+      "font_class": "jian",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "5691615",
+      "name": "减",
+      "font_class": "ziyuan",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "10463091",
+      "name": "删除筛选项",
+      "font_class": "delete",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "13227657",
+      "name": "加",
+      "font_class": "CombinedShape",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "13242311",
+      "name": "返 回",
+      "font_class": "fanhui",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "13596165",
+      "name": "减",
+      "font_class": "jian1",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "13807881",
+      "name": "更多",
+      "font_class": "yunpanlogo-",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    }
+  ]
+}

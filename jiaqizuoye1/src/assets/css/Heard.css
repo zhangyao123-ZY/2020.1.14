@@ -1,0 +1,28 @@
+.heard{
+    height: 2.5rem;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: green;
+    color: #fff;
+}
+.heard .first{
+width: 15%;
+}
+.heard .two{
+    width: 60%;
+}
+.heard .three{
+    width: 15%;
+}
+.heard .four{
+    text-align: left;
+    display: none;
+}
+.heard .flag{
+    display: block;
+}
